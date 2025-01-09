@@ -11,7 +11,11 @@ containers:
       DB_PASSWORD: ${resources.db.password}
       DB_HOST: ${resources.db.host}
       DB_PORT: ${resources.db.port}
+      BUCKET_NAME: ${resources.gcs.name} # Nome do bucket provisionado
 resources:
+  gcs:
+    type: gcs # Tipo de recurso
+    class: basic-admin # Classe de acesso ao bucket (admin full access)
   dns:
     type: dns
   route:
