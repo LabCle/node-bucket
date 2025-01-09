@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "node-bucket"
+  annotations:
+    "humanitec.com/orgId": "humaniteclab"
+    "humanitec.com/appId": "node-bucket"
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
